@@ -22,9 +22,9 @@ module.exports = {
             image varchar(255)
         );
         
-        INSERT INTO national_parks (name, location, rating, image)
-        VALUES ('Yellowstone National Park', 'Wyoming, Idaho, and Montana', null, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),
-        ('Yosemite National Park', 'California', 5, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),
+        /* INSERT INTO national_parks (name, location, rating, image)
+        VALUES ('Yellowstone National Park', 'Wyoming, Idaho, and Montana', null, "https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg"),
+         ('Yosemite National Park', 'California', 5, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),
         ('Grand Teton National Park', 'Wyoming', null, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),
         ('Glacier National Park', 'Montana', 5, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),
         ('Zion National Park', 'Utah', null, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),
@@ -85,7 +85,8 @@ module.exports = {
         ('Indiana Dunes National Park', 'Indiana', null, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),)
         ('Lake Clark National Park and Preserve', 'Alaska', null, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),
         ('New River Gorge National Park and Preserve', 'West Virginia', null, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),
-        ('White Sands National Park', 'New Mexico', null, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg');
+        ('White Sands National Park', 'New Mexico', null, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'); */
+        
         `)
     }
 }
