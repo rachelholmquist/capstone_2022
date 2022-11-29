@@ -23,7 +23,7 @@ module.exports = {
         );
         
         /* INSERT INTO national_parks (name, location, rating, image)
-        VALUES ('Yellowstone National Park', 'Wyoming, Idaho, and Montana', null, "https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg"),
+        VALUES (),
          ('Yosemite National Park', 'California', 5, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),
         ('Grand Teton National Park', 'Wyoming', null, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),
         ('Glacier National Park', 'Montana', 5, 'https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg'),
