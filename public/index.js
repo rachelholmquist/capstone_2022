@@ -14,7 +14,11 @@ function createParkCard (parks) {
     const parkCard = document.createElement('div')
     parkCard.classList.add('park-card')
 
-    parkCard.innerHTML = `<img alt='park cover image' src=${parks.image} class='park-card-image'>`
+    parkCard.innerHTML = `<img alt='park cover image' src=${parks.image} class='park-card-image'><br>
+    <div class="name">${parks.name}<br>${parks.location}</div>
+    <button onclick="saveVisitedParks()">Save to Visited List</button>
+    <button id="saveToNext">Save to Up Next List</button>
+    `
 
     imageContainer.appendChild(parkCard);
 }
@@ -32,7 +36,10 @@ function createVisitedCard (userdata) {
     const visitedCard = document.createElement('div')
     visitedCard.classList.add('visited-card')
 
-    visitedCard.innerHTML = `<img alt='park cover image' src=${userdata.image} class='visited-card-image'>`
+    visitedCard.innerHTML = `<img alt='park cover image' src=${userdata.image} class='visited-card-image'/>
+    <br>
+    <div class="name">${userdata.name}<br>${userdata.location}</div>`
+
 
     visitedContainer.appendChild(visitedCard);
 }
@@ -42,4 +49,8 @@ function displayVisited (arr) {
     for(let i = 0; i < arr.length; i++){
         createVisitedCard(arr[i])
     }
+}
+
+function testing () {
+    alert('made it')
 }
