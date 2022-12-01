@@ -1,5 +1,5 @@
 [
-    { "id": 1, "name": "Yellowstone National Park", "location": "Wyoming, Idaho, and Montana", "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.outsideonline.com%2Fwp-content%2Fuploads%2F2019%2F10%2F23%2Fgeyser-yelowstone-burst_h.jpg&imgrefurl=https%3A%2F%2Fwww.outsideonline.com%2Fadventure-travel%2Fnational-parks%2Fyellowstone-national-park-travel-guide%2F&tbnid=uxZf6uPtPww5HM&vet=12ahUKEwjM_8nsytL7AhWSHTQIHR_8BMAQMygCegUIARDrAQ..i&docid=_cl9srYIWcxuvM&w=2400&h=1350&q=Yellowstone%20National%20Park&ved=2ahUKEwjM_8nsytL7AhWSHTQIHR_8BMAQMygCegUIARDrAQ"},
+    { "id": 1, "name": "Yellowstone National Park", "location": "Wyoming, Idaho, and Montana", "image": "https://media.cntraveler.com/photos/6185465b62de01ff927a2456/16:9/w_2978,h_1675,c_limit/Yellowstone_Grand%20Prismatic%20Spring_GettyImages-667781269.jpg"},
     { "id": 2, "name": "Yosemite National Park", "location": "California" , "image":  "https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg"},
     { "id": 3, "name": "Grand Teton National Park", "location": "Wyoming", "image": "https://www.nps.gov/common/uploads/grid_builder/grte/crop16_9/CE6CA7E9-A738-AB23-64E97A4997CE2239.jpg?width=465&quality=90&mode=crop"},
     { "id": 4, "name": "Glacier National Park", "location": "Montana", "image": "https://s27363.pcdn.co/wp-content/uploads/2020/05/Best-Things-to-do-in-Glacier.jpg.optimal.jpg"},
@@ -52,14 +52,14 @@
     { "id": 51, "name": "National Park of American Samoa", "location": "American Samoa", "image": "https://i.natgeofe.com/n/c7008ade-4fd7-4974-86cf-da3a6ba2972c/92925_16x9.jpg?w=1200"},
     { "id": 52, "name": "Virgin Islands National Park", "location": "U.S. Virgin Islands", "image": "https://national-park.com/wp-content/uploads/2016/04/Welcome-to-Virgin-Islands-National-Park.jpg"},
     { "id": 53, "name": "Biscayne National Park", "location": "Florida", "image": "https://www.miamiandbeaches.com/getmedia/f8b2a8d9-b42f-4cc1-93ad-529c8ac31fda/Boca-Chita-Lighthouse_1440x900.aspx?width=480&height=300&ext=.jpg"},
-    { "id": 54, "name": "Redwood National Park", "location": "California", "image": },
-    { "id": 55, "name": "Congaree National Park", "location": "South Carolina", "image": },
-    { "id": 56, "name": "Kobuk Valley National Park", "location": "Alaska", "image": },
-    { "id": 57, "name": "Theodore Roosevelt National Park", "location": "North Dakota", "image": },
-    { "id": 58, "name": "Wind Cave National Park", "location": "South Dakota", "image": },
-    { "id": 59, "name": "Gateway Arch National Park", "location": "Missouri", "image": },
-    { "id": 60, "name": "Indiana Dunes National Park", "location": "Indiana", "image": },
-    { "id": 61, "name": "Lake Clark National Park and Preserve", "location": "Alaska", "image": },
-    { "id": 62, "name": "New River Gorge National Park and Preserve", "location": "West Virginia", "image": },
-    { "id": 63, "name": "White Sands National Park", "location": "New Mexico", "image": }
+    { "id": 54, "name": "Redwood National Park", "location": "California", "image": ""},
+    { "id": 55, "name": "Congaree National Park", "location": "South Carolina", "image": ""},
+    { "id": 56, "name": "Kobuk Valley National Park", "location": "Alaska", "image": ""},
+    { "id": 57, "name": "Theodore Roosevelt National Park", "location": "North Dakota", "image": ""},
+    { "id": 58, "name": "Wind Cave National Park", "location": "South Dakota", "image": ""},
+    { "id": 59, "name": "Gateway Arch National Park", "location": "Missouri", "image": ""},
+    { "id": 60, "name": "Indiana Dunes National Park", "location": "Indiana", "image": ""},
+    { "id": 61, "name": "Lake Clark National Park and Preserve", "location": "Alaska", "image": ""},
+    { "id": 62, "name": "New River Gorge National Park and Preserve", "location": "West Virginia", "image": ""},
+    { "id": 63, "name": "White Sands National Park", "location": "New Mexico", "image": ""}
 ]
