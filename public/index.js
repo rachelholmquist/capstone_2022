@@ -1,11 +1,14 @@
 const imageContainer = document.querySelector('#image-container');
+const visitedContainer = document.querySelector('#visited-container')
 
 const url = `http://localhost:4003/api/parks`
 
 const parksCallback = ({data: parks }) => displayParks(parks);
+const visitedCallback = ({ data: userdata }) => displayVisited(userdata);
 const errCallback = err => console.log(err);
 
 const getAllParks = () => axios.get(url).then(parksCallback).catch(errCallback);
+const saveVisitedParks = body => axios.post(url, body).then(visitedCallback).catch(errCallback);
 
 function createParkCard (parks) {
     const parkCard = document.createElement('div')
@@ -25,6 +28,18 @@ function displayParks (arr) {
 
 getAllParks();
 
-parkBtn = document.querySelector('#getParks');
+function createVisitedCard (userdata) {
+    const visitedCard = document.createElement('div')
+    visitedCard.classList.add('visited-card')
 
-parkBtn.addEventListener('click', displayParks);
+    visitedCard.innerHTML = `<img alt='park cover image' src=${userdata.image} class='visited-card-image'>`
+
+    visitedContainer.appendChild(visitedCard);
+}
+
+function displayVisited (arr) {
+    visitedContainer.innerHTML = ``
+    for(let i = 0; i < arr.length; i++){
+        createVisitedCard(arr[i])
+    }
+}
