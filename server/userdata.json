@@ -1,20 +1,20 @@
 [
   {
-    "id": 0,
-    "name": "testing",
-    "location": "hole",
-    "image": "asdf"
+    "id": "1",
+    "name": "Yellowstone National Park",
+    "location": "Wyoming, Idaho, and Montana",
+    "image": "https://media.cntraveler.com/photos/6185465b62de01ff927a2456/16:9/w_2978,h_1675,c_limit/Yellowstone_Grand%20Prismatic%20Spring_GettyImages-667781269.jpg"
   },
   {
-    "id": "45",
-    "name": "test park",
-    "location": "Wa",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Katmai_Crater_1980.jpg/1200px-Katmai_Crater_1980.jpg"
+    "id": "9",
+    "name": "Denali National Park",
+    "location": "Alaska",
+    "image": "https://www.nps.gov/dena/learn/nature/images/wildlife-landing.jpg?maxwidth=1200&maxheight=1200&autorotate=false"
   },
   {
-    "id": "20000",
-    "name": "test park",
-    "location": "Wa",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Katmai_Crater_1980.jpg/1200px-Katmai_Crater_1980.jpg"
+    "id": "10",
+    "name": "Rocky Mountain National Park",
+    "location": "Colorado",
+    "image": "https://www.rockymountainnationalpark.com/images/480/20210628-19-59-37-lg.jpg"
   }
 ]
