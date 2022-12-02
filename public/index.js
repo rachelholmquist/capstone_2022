@@ -16,7 +16,7 @@ function createParkCard (parks) {
 
     parkCard.innerHTML = `<img alt='park cover image' src=${parks.image} class='park-card-image'><br>
     <div class="name">${parks.name}<br>${parks.location}</div>
-    <button onclick="saveVisitedParks()">Save to Visited List</button>
+    <button onclick="displayVisited()">Save to Visited List</button>
     <button id="saveToNext">Save to Up Next List</button>
     `
 
@@ -31,6 +31,10 @@ function displayParks (arr) {
 }
 
 getAllParks();
+
+
+
+
 
 function createVisitedCard (userdata) {
     const visitedCard = document.createElement('div')

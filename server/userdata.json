@@ -1,3 +1,20 @@
 [
-    {}
+  {
+    "id": 0,
+    "name": "testing",
+    "location": "hole",
+    "image": "asdf"
+  },
+  {
+    "id": "45",
+    "name": "test park",
+    "location": "Wa",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Katmai_Crater_1980.jpg/1200px-Katmai_Crater_1980.jpg"
+  },
+  {
+    "id": "20000",
+    "name": "test park",
+    "location": "Wa",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Katmai_Crater_1980.jpg/1200px-Katmai_Crater_1980.jpg"
+  }
 ]

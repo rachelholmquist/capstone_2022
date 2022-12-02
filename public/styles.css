@@ -66,18 +66,20 @@ footer {
 }
 
 img {
-    width: 250px;
-    height: 225px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 #park-card {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    align-content:space-around;
 }
 
 .park-card-image {
-    width: 200px;
+    width: 300px;
+    height: 225px;
+    border-radius: 10%;
 }
 
