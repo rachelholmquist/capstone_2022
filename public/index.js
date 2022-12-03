@@ -3,6 +3,7 @@ const visitedContainer = document.querySelector('#visited-container')
 
 const url = `http://localhost:4003/api/parks`
 const vUrl = `http://localhost:4003/api/visited`
+const dUrl = `http://localhost:4003/api/delete`
 
 const parksCallback = ({data: parks }) => displayParks(parks);
 const visitedCallback = ({ data: userdata }) => displayVisited(userdata);
@@ -14,6 +15,8 @@ function saveVisitedParks (id, name, location, image)
 {axios.post(url, {id, name, location, image}).then(alert('Saved to visited list')).catch(errCallback);}
 
 const getVisitedParks = () => axios.get(vUrl).then(visitedCallback).catch(errCallback);
+
+const deletePark = (id) => axios.delete(dUrl, {data:{'id':id}}).then(alert('Successfully deleted')).catch(errCallback);
 
 function createParkCard (parks) {
     const parkCard = document.createElement('div');
@@ -46,7 +49,9 @@ function createVisitedCard (userdata) {
     visitedCard.classList.add('visited-card')
 
     visitedCard.innerHTML = `<img alt='park cover image' src=${userdata.image} class='park-card-image'/><br>
-    <div class="name">${userdata.name}<br><br>${userdata.location}</div>`
+    <div class="name">${userdata.name}<br><br>${userdata.location}</div>
+    <br>
+    <button id="deleteBtn" onclick="deletePark(${userdata.id})">Delete</button>`
 
 
     visitedContainer.appendChild(visitedCard);

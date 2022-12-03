@@ -24,27 +24,19 @@ module.exports = {
 
     getVisited : (req, res) => {
         res.status(200).send(visitedArray);
-    }
+    },
 
-    // saveHandler: (parks, res) => {
+    deletePark : (req, res) => {
+        const { id } = req.params;
+        let data = visitedArray;
+        console.log('data before', req.data);
+        for(let i = 0; i < data.length; i++){
+            if(id === data[i].id){
+                data.splice(i, 1)
+            }
+        } 
+        fs.writeFileSync('server/userdata.json', JSON.stringify(data, null, 2));
+        res.status(200).send(`deleted successfully`);
+    } 
 
-    //     let bodyObject = {
-    //         id: `${parks.id}`.valueOf,
-    //         name: `${parks.name}`.valueOf,
-    //         location: `${parks.location}`.valueOf,
-    //         image: `${parks.image}`.valueOf
-    //     }
-    
-    //     function saveVisited (bodyObject) {
-    //         const { id, name, location, image } = bodyObject;
-    //         visitedArray.push ({
-    //             id : `${id}`,
-    //             name : `${name}`,
-    //             location : `${location}`,
-    //             image : `${image}`
-    //         })
-    //     }
-    
-    
-    // }
 }

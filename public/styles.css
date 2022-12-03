@@ -97,23 +97,39 @@ img {
 }
 
 .visited-card {
-    border: 1px solid #aca885;
+    background-color: #aca885;
+    margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
     width: 300px;
     height: 350px;
     text-align: center;
     border-radius: 5%;
-    color: #486856;
+    color: white;
+}
+
+#content {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30px;
 }
 
 #visited-container {
-    background-color: whitesmoke;
-    margin: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #486856;
+    margin-left: 30px;
     width: 925px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+#sidebar {
+    width: 350px;
+    border-radius: 10px;
+    background-color: #486856;
 }
 
 button {
@@ -121,4 +137,13 @@ button {
     border-color:#486856;
     background-color: white;
     color:#486856;
+}
+
+#visited-headers {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    padding-left: 500px;
+    padding-right: 150px;
+    color: #486856;
 }
