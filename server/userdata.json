@@ -6,51 +6,21 @@
     "image": "https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg"
   },
   {
-    "id": "6",
-    "name": "Grand Canyon National Park",
-    "location": "Arizona",
-    "image": "https://media.cntraveler.com/photos/5ebeef63f52f4c0911cac483/master/pass/GrandCanyonNationalPark-2020-GettyImages-858637934.jpg"
+    "id": "3",
+    "name": "Grand Teton National Park",
+    "location": "Wyoming",
+    "image": "https://www.nps.gov/common/uploads/grid_builder/grte/crop16_9/CE6CA7E9-A738-AB23-64E97A4997CE2239.jpg?width=465&quality=90&mode=crop"
   },
   {
-    "id": "7",
-    "name": "Arches National Park",
+    "id": "5",
+    "name": "Zion National Park",
     "location": "Utah",
-    "image": "https://www.myutahparks.com/wp-content/uploads/2021/02/Arches-DelicateArch-LaSalMountains_DP_1600.jpg"
+    "image": "https://cdn.getyourguide.com/img/location/5c40d26a80a40.jpeg/99.jpg"
   },
   {
-    "id": "12",
-    "name": "Joshua Tree National Park",
-    "location": "California",
-    "image": "https://wp-cdn.indiecampers.com/blog/wp-content/uploads/2021/12/24100319/shutterstock_1564546156-1-scaled.jpg"
-  },
-  {
-    "id": "16",
-    "name": "Olympic National Park",
-    "location": "Washington",
-    "image": "https://olympicpeninsula.org/wp-content/uploads/2018/08/falls.jpg"
-  },
-  {
-    "id": "25",
-    "name": "North Cascades National Park",
-    "location": "Washington",
-    "image": "https://bearfoottheory.com/wp-content/uploads/2021/11/North-Cascades-National-Park-2.jpeg"
-  },
-  {
-    "id": "28",
-    "name": "Great Sand Dunes National Park",
-    "location": "Colorado",
-    "image": "https://www.travelinusa.us/wp-content/uploads/sites/3/2022/01/great-sand-dunes-national-park.jpg"
-  },
-  {
-    "id": "35",
-    "name": "Mount Rainier National Park",
-    "location": "Washington",
-    "image": "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/seattlesouthside/mount_rainier_paradise_fb0fef25-e1c0-4b3f-9368-c886d18c5bc0.jpg"
-  },
-  {
-    "id": "36",
-    "name": "Capitol Reef National Park",
+    "id": "5",
+    "name": "Zion National Park",
     "location": "Utah",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Capitol_Reef_National_Park.jpg"
+    "image": "https://cdn.getyourguide.com/img/location/5c40d26a80a40.jpeg/99.jpg"
   }
 ]
