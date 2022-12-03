@@ -20,7 +20,12 @@ module.exports = {
         fs.writeFileSync('server/userdata.json', JSON.stringify(data, null, 2));
         res.status(200).send("Park added successfully.");
 
+    },
+
+    getVisited : (req, res) => {
+        res.status(200).send(visitedArray);
     }
+
     // saveHandler: (parks, res) => {
 
     //     let bodyObject = {

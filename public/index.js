@@ -2,14 +2,18 @@ const imageContainer = document.querySelector('#image-container');
 const visitedContainer = document.querySelector('#visited-container')
 
 const url = `http://localhost:4003/api/parks`
+const vUrl = `http://localhost:4003/api/visited`
 
 const parksCallback = ({data: parks }) => displayParks(parks);
-// const visitedCallback = ({ data: userdata }) => displayVisited(userdata);
+const visitedCallback = ({ data: userdata }) => displayVisited(userdata);
 const errCallback = err => console.log(err);
 
 const getAllParks = () => axios.get(url).then(parksCallback).catch(errCallback);
+
 function saveVisitedParks (id, name, location, image) 
 {axios.post(url, {id, name, location, image}).then(alert('success')).catch(errCallback);}
+
+const getVisitedParks = () => axios.get(vUrl).then(visitedCallback).catch(errCallback);
 
 function createParkCard (parks) {
     const parkCard = document.createElement('div');
@@ -32,29 +36,29 @@ function displayParks (arr) {
 }
 
 getAllParks();
-displayParks();
+// displayParks();
 
 
 
 
-// function createVisitedCard (userdata) {
-//     const visitedCard = document.createElement('div')
-//     visitedCard.classList.add('visited-card')
+function createVisitedCard (userdata) {
+    const visitedCard = document.createElement('div')
+    visitedCard.classList.add('visited-card')
 
-//     visitedCard.innerHTML = `<img alt='park cover image' src=${userdata.image} class='visited-card-image'/>
-//     <br>
-//     <div class="name">${userdata.name}<br>${userdata.location}</div>`
+    visitedCard.innerHTML = `<img alt='park cover image' src=${userdata.image} class='visited-card-image'/>`
 
 
-//     visitedContainer.appendChild(visitedCard);
-// }
+    visitedContainer.appendChild(visitedCard);
+}
 
-// function displayVisited (arr) {
-//     visitedContainer.innerHTML = ``
-//     for(let i = 0; i < arr.length; i++){
-//         createVisitedCard(arr[i])
-//     }
-// }
+function displayVisited (arr) {
+    visitedContainer.innerHTML = ``
+    for(let i = 0; i < arr.length; i++){
+        createVisitedCard(arr[i])
+    }
+}
+
+getVisitedParks();
 
 // function testing () {
 //     alert('made it')

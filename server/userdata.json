@@ -16,5 +16,29 @@
     "name": "Rocky Mountain National Park",
     "location": "Colorado",
     "image": "https://www.rockymountainnationalpark.com/images/480/20210628-19-59-37-lg.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Yosemite National Park",
+    "location": "California",
+    "image": "https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Grand Teton National Park",
+    "location": "Wyoming",
+    "image": "https://www.nps.gov/common/uploads/grid_builder/grte/crop16_9/CE6CA7E9-A738-AB23-64E97A4997CE2239.jpg?width=465&quality=90&mode=crop"
+  },
+  {
+    "id": "4",
+    "name": "Glacier National Park",
+    "location": "Montana",
+    "image": "https://s27363.pcdn.co/wp-content/uploads/2020/05/Best-Things-to-do-in-Glacier.jpg.optimal.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Yosemite National Park",
+    "location": "California",
+    "image": "https://www.scenicwonders.com/wp-content/uploads/2014/05/yosemite-valley-entrance-hdr.jpg"
   }
 ]
