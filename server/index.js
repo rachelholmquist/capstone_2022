@@ -1,7 +1,7 @@
 
 const express = require('express');
 const cors = require('cors');
-const { getParks, saveToVisited, getVisitedParks, getVisited } = require('./controller');
+const { getParks, saveToVisited, getVisited } = require('./controller');
 
 const app = express();
 app.use(express.json())

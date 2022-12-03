@@ -11,7 +11,7 @@ const errCallback = err => console.log(err);
 const getAllParks = () => axios.get(url).then(parksCallback).catch(errCallback);
 
 function saveVisitedParks (id, name, location, image) 
-{axios.post(url, {id, name, location, image}).then(alert('success')).catch(errCallback);}
+{axios.post(url, {id, name, location, image}).then(alert('Saved to visited list')).catch(errCallback);}
 
 const getVisitedParks = () => axios.get(vUrl).then(visitedCallback).catch(errCallback);
 
@@ -20,8 +20,8 @@ function createParkCard (parks) {
     parkCard.classList.add('park-card');
 
     parkCard.innerHTML = `<img alt='park cover image' src=${parks.image} class='park-card-image'><br>
-    <div class="name">${parks.name}<br>${parks.location}</div>
-    <button onclick="saveVisitedParks(${parks.id}, '${parks.name}', '${parks.location}', '${parks.image}')">Save to Visited List</button>
+    <div class="name">${parks.name}<br><br>${parks.location}</div><br>
+    <button id="saveToVisit" onclick="saveVisitedParks(${parks.id}, '${parks.name}', '${parks.location}', '${parks.image}')">Save to Visited List</button><br>
     <button id="saveToNext">Save to Up Next List</button>
     `
 
@@ -45,7 +45,8 @@ function createVisitedCard (userdata) {
     const visitedCard = document.createElement('div')
     visitedCard.classList.add('visited-card')
 
-    visitedCard.innerHTML = `<img alt='park cover image' src=${userdata.image} class='visited-card-image'/>`
+    visitedCard.innerHTML = `<img alt='park cover image' src=${userdata.image} class='park-card-image'/><br>
+    <div class="name">${userdata.name}<br><br>${userdata.location}</div>`
 
 
     visitedContainer.appendChild(visitedCard);
@@ -60,6 +61,3 @@ function displayVisited (arr) {
 
 getVisitedParks();
 
-// function testing () {
-//     alert('made it')
-// }

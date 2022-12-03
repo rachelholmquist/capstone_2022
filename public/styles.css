@@ -5,20 +5,23 @@ body {
 }
 
 header {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 26px;
+    background-color: white;
+    border-top: solid 5px #aca885;
+    border-bottom: solid 5px #aca885;
     height: 100px;
-    width: 100% vw;
-    background-color: #486856;
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 1px;
-    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #486856;
 }
 
 nav {
-    font-size: 20px;
+    font-size: 25px;
     height: 25px;
-    background-color: #D1C0A8;
+    background-color: white;
     color: #486856;
     display: flex;
     justify-content: space-between;
@@ -27,6 +30,11 @@ nav {
 a {
     text-decoration: none;
     color: #486856; 
+}
+
+button:hover {
+    cursor:pointer;
+    box-shadow: 0 0 5px #486856;
 }
 
 a:active {
@@ -51,8 +59,8 @@ a:active {
 footer {
     font-size: 20px;
     height: 25px;
-    background-color: #D1C0A8;
-    color: #486856;
+    background-color: #aca885;
+    color: white;
     text-align: right;
 }
 
@@ -70,16 +78,47 @@ img {
     padding-bottom: 15px;
 }
 
-#park-card {
+.park-card {
+    margin: 20px;
+    background-color: #aca885;
+    font-size: 18px;
+    font-weight: bold;
     width: 250px;
-    height: 300px;
-    display: flex;
-    align-content:space-around;
+    height: 400px;
+    text-align: center;
+    border-radius: 5%;
+    color: #486856;
 }
 
 .park-card-image {
-    width: 300px;
-    height: 225px;
+    width: 225px;
+    height: 175px;
     border-radius: 10%;
 }
 
+.visited-card {
+    border: 1px solid #aca885;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    border-radius: 5%;
+    color: #486856;
+}
+
+#visited-container {
+    background-color: whitesmoke;
+    margin: 10px;
+    width: 925px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 10px;
+    border-color:#486856;
+    background-color: white;
+    color:#486856;
+}
