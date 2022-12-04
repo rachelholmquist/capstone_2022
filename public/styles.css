@@ -5,8 +5,8 @@ body {
 }
 
 header {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 26px;
     background-color: white;
     border-top: solid 5px #aca885;
@@ -24,7 +24,7 @@ nav {
     background-color: white;
     color: #486856;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 a {
@@ -98,7 +98,7 @@ img {
 
 .visited-card {
     background-color: #aca885;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     font-size: 18px;
     font-weight: bold;
     width: 300px;
@@ -130,11 +130,6 @@ select {
     justify-content: space-between;
 }
 
-#sidebar {
-    width: 350px;
-    border-radius: 10px;
-    background-color: #486856;
-}
 
 button {
     border-radius: 10px;
@@ -152,17 +147,17 @@ button {
     color: #486856;
 }
 
-#up-next-container{
-    background-color: #486856;
+/* #next-container{
+
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+} */
 
 .next-card {
-    margin: 20px;
     background-color: #aca885;
+    margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
     width: 250px;

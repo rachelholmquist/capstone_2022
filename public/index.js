@@ -1,12 +1,12 @@
 const imageContainer = document.querySelector('#image-container');
 const visitedContainer = document.querySelector('#visited-container')
-const nextContainer = document.querySelector('#up-next-container')
+const nextContainer = document.querySelector('#next-container')
 
 const url = `http://localhost:4003/api/parks`
 const vUrl = `http://localhost:4003/api/visited`
 const dUrl = `http://localhost:4003/api/delete/`
 const nUrl = `http://localhost:4003/api/next/`
-const pUrl = `http://localhost:4003/api/put/`
+
 
 const parksCallback = ({data: parks }) => displayParks(parks);
 const visitedCallback = ({ data: userdata }) => displayVisited(userdata);
@@ -28,8 +28,6 @@ const deletePark = (id) => axios.delete(dUrl+id).then(getVisitedParks).catch(err
 const getNextParks = () => axios.get(nUrl).then(upNextCallback).catch(errCallback);
 
 const deleteNextPark = (id) => axios.delete(nUrl+id).then(getNextParks).catch(errCallback);
-
-const updateRating = (id, rating) => axios.put(pUrl+id+'/'+rating).then(getVisitedParks).catch(errCallback)
 
 function createParkCard (parks) {
     const parkCard = document.createElement('div');
@@ -59,8 +57,8 @@ function createVisitedCard (userdata) {
     visitedCard.classList.add('visited-card')
 
     visitedCard.innerHTML = `<img alt='park cover image' src=${userdata.image} class='park-card-image'/><br>
-    <div class="name">${userdata.name}<br>${userdata.location}<br>${userdata.rating}</div>
-    <br><br>Type a rating of 1-5:<input type="text" id="input"></input><button onclick"updateRating(${userdata.id}, ${document.querySelector('#input').value})">submit</button><br>
+    <div class="name">${userdata.name}<br><br>${userdata.location}</div>
+    <br><br>
     <button id="deleteBtn" onclick="deletePark(${userdata.id})">Delete</button>`
 
     visitedContainer.appendChild(visitedCard);

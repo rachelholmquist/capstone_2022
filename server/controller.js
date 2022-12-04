@@ -65,18 +65,5 @@ module.exports = {
         } 
         fs.writeFileSync('server/upnext.json', JSON.stringify(data, null, 2));
         res.status(200).send(`deleted successfully`);
-    },
-    rateVisitedPark: (req, res) => {
-        const { id, rating } = req.params;
-        // const { rating } = req.body;
-        let data = visitedArray;
-        console.log(req.params);
-        for(let i = 0; i < data.length; i++){
-            if(data[i].id === id){
-                data[i] = {...data[i], "rating": rating}
-            }
-        }
-        fs.writeFileSync('server/userdata.json', JSON.stringify(data, null, 2));
-        res.status(200).send("Updated successfully.");
     }
 }
