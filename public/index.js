@@ -5,7 +5,7 @@ const nextContainer = document.querySelector('#up-next-container')
 const url = `http://localhost:4003/api/parks`
 const vUrl = `http://localhost:4003/api/visited`
 const dUrl = `http://localhost:4003/api/delete/`
-const nUrl = `http://localhost:4003/api/next`
+const nUrl = `http://localhost:4003/api/next/`
 
 const parksCallback = ({data: parks }) => displayParks(parks);
 const visitedCallback = ({ data: userdata }) => displayVisited(userdata);
@@ -15,16 +15,18 @@ const errCallback = err => console.log(err);
 const getAllParks = () => axios.get(url).then(parksCallback).catch(errCallback);
 
 function saveVisitedParks (id, name, location, image) 
-{axios.post(url, {id, name, location, image}).then(alert('Saved to visited list')).catch(errCallback);}
+{axios.post(url, {id, name, location, image}).then(alert(`${name} saved to visited list`)).catch(errCallback);}
 
 function saveNextParks (id, name, location, image) 
-{axios.post(nUrl, {id, name, location, image}).then(alert('Saved to Up Next list')).catch(errCallback);}
+{axios.post(nUrl, {id, name, location, image}).then(alert(`${name} saved to up next list`)).catch(errCallback);}
 
 const getVisitedParks = () => axios.get(vUrl).then(visitedCallback).catch(errCallback);
 
 const deletePark = (id) => axios.delete(dUrl+id).then(getVisitedParks).catch(errCallback);
 
 const getNextParks = () => axios.get(nUrl).then(upNextCallback).catch(errCallback);
+
+const deleteNextPark = (id) => axios.delete(nUrl+id).then(getNextParks).catch(errCallback);
 
 function createParkCard (parks) {
     const parkCard = document.createElement('div');
@@ -88,6 +90,6 @@ function displayNext (arr) {
     for(let i = 0; i < arr.length; i++){
         createNextCard(arr[i])
     }
+}
 
 getNextParks();
-}

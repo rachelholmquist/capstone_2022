@@ -55,5 +55,19 @@ module.exports = {
     },
     getNext : (req, res) => {
         res.status(200).send(upNextArray);
+    },
+    
+    deleteNextPark : (req, res) => {
+        const { id } = req.params;
+        let data = upNextArray;
+        console.log('data before', id);
+        for(let i = 0; i < data.length; i++){
+            if(data[i].id === id){
+                console.log(id)
+                data.splice(i, 1)
+            }
+        } 
+        fs.writeFileSync('server/upnext.json', JSON.stringify(data, null, 2));
+        res.status(200).send(`deleted successfully`);
     }
 }
