@@ -4,5 +4,11 @@
     "name": "Yellowstone National Park",
     "location": "Wyoming, Idaho, and Montana",
     "image": "https://media.cntraveler.com/photos/6185465b62de01ff927a2456/16:9/w_2978,h_1675,c_limit/Yellowstone_Grand%20Prismatic%20Spring_GettyImages-667781269.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Great Smoky Mountains National Park",
+    "location": "Tennessee",
+    "image": "https://koa.com/blog/images/Our-guide-to-the-best-sites-in-and-around-Great-Smoky-Mountains-National-Park..jpg?preset=blogPhoto"
   }
 ]
